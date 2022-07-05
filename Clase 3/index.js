@@ -12,7 +12,7 @@ for (let index = 0; index <= 10; index++){
 
 for (let Room = 1; Room < 11; Room++){
     let Name = prompt("Hello, my name is...").toLowerCase();
-    if (Name == "I am employee"){
+    if (Name == "i am employee"){
         alert("Logged in");
         break;
     }
