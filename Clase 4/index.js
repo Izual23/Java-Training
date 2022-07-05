@@ -49,7 +49,7 @@ switch (choose){
         alert(`El precio por tu pack es de ${finalPaq2} pesos argentinos.`);
         let again2 = prompt("¿Deseas envio digital o físico? El envío físico tiene un costo de 1000 pesos argentinos.").toLowerCase();
         if (again2 == "si"){
-            alert(`El precio por 1: Cuerpo entero + envio físico es de ${totalPaq2} pesos argentinos.`);
+            alert(`El precio por 2: Medio Cuerpo + envio físico es de ${totalPaq2} pesos argentinos.`);
             alert("Será derivado a PayPal para realizar el pago.")
         }
         else if (again2 == "no"){
@@ -63,7 +63,7 @@ switch (choose){
         alert(`El precio por tu pack es de ${finalPaq3} pesos argentinos.`);
         let again3 = prompt("¿Deseas envio digital o físico? El envío físico tiene un costo de 1000 pesos argentinos.").toLowerCase();
         if (again3 == "si"){
-            alert(`El precio por 1: Cuerpo entero + envio físico es de ${totalPaq3} pesos argentinos.`);
+            alert(`El precio por 3: Cabeza + envio físico es de ${totalPaq3} pesos argentinos.`);
             alert("Será derivado a PayPal para realizar el pago.")
         }
         else if (again3 == "no"){
@@ -77,7 +77,7 @@ switch (choose){
         alert(`El precio por tu pack es de ${finalPaq4} pesos argentinos.`);
         let again4 = prompt("¿Deseas envio digital o físico? El envío físico tiene un costo de 1000 pesos argentinos.").toLowerCase();
         if (again4 == "si"){
-            alert(`El precio por 1: Cuerpo entero + envio físico es de ${totalPaq4} pesos argentinos.`);
+            alert(`El precio por 4: Fondo + envio físico es de ${totalPaq4} pesos argentinos.`);
             alert("Será derivado a PayPal para realizar el pago.")
         }
         else if (again4 == "no"){
@@ -91,7 +91,7 @@ switch (choose){
         alert(`El precio por tu pack es de ${finalPaq5} pesos argentinos.`);
         let again5 = prompt("¿Deseas envio digital o físico? El envío físico tiene un costo de 1000 pesos argentinos.").toLowerCase();
         if (again5 == "si"){
-            alert(`El precio por 1: Cuerpo entero + envio físico es de ${totalPaq5} pesos argentinos.`);
+            alert(`El precio por 5: Chibi + envio físico es de ${totalPaq5} pesos argentinos.`);
             alert("Será derivado a PayPal para realizar el pago.")
         }
         else if (again5 == "no"){
