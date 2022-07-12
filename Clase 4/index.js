@@ -1,25 +1,21 @@
-alert("Bienvenido/a a mi página web de dibujos, a continuación podrás seleccionar tu paquete y verificar sus precios");
-alert("Haz tu pedido escribiendo el número correspondiente a cada paquete.");
-const categories = ["Cuerpo Entero"," Medio Cuerpo", "Cabeza", "Fondo", "Chibi"]
-const costs = [3500, 2000, 1500, 3000, 100, 200, 100]
-let choose = parseInt(prompt(`(1).${categories[0]}: $${costs[0]}, (2).${categories[1]}: $${costs[1]}, (3).${categories[2]}: $${costs[2]}, (4).${categories[3]}: $${costs[3]}, (5).${categories[4]}: $${costs[4]}`));
-const plus = (a, b) =>  a + b;
-const minus = (a, b) =>  a - b;
-const iva = x => x * 0.40;
-
 //Helpers
 let error = "Error al no seleccionar envio correctamente, por favor, realice el pedido nuevamente";
 let question = "¿Deseas envio físico? El envío físico tiene un costo de 1000 pesos argentinos.";
 
+//Calculations
+const plus = (a, b) =>  a + b;
+const minus = (a, b) =>  a - b;
+const iva = x => x * 0.40;
+
 //Details
 const prices = [
-    {id: 1, name: "Pack1", price: costs[0]},
-    {id: 2, name: "Pack2", price: costs[1]},
-    {id: 3, name: "Pack3", price: costs[2]},
-    {id: 4, name: "Pack4", price: costs[3]},
-    {id: 5, name: "Pack5", price: costs[4]},
-    {id: 6, name: "Discount", price: costs[5]},
-    {id: 7, name: "Sends", price: costs[6]},
+    {id: 1, name: "Cuerpo Entero", price: 3500},
+    {id: 2, name: "Medio Cuerpo", price: 2000},
+    {id: 3, name: "Cabeza", price: 1500},
+    {id: 4, name: "Fondo", price: 3000},
+    {id: 5, name: "Chibi", price: 1000},
+    {id: 6, name: "Discount", price: 200},
+    {id: 7, name: "Sends", price: 1000},
 ];
 
 //Calculating 1
@@ -35,6 +31,10 @@ let totalPaq2 = plus (finalPaq2, prices[6].price);
 let totalPaq3 = plus (finalPaq3, prices[6].price);
 let totalPaq4 = plus (finalPaq4, prices[6].price);
 let totalPaq5 = plus (finalPaq5, prices[6].price);
+
+alert("Bienvenido/a a mi página web de dibujos, a continuación podrás seleccionar tu paquete y verificar sus precios");
+alert("Haz tu pedido escribiendo el número correspondiente a cada paquete.");
+let choose = parseInt(prompt(`(1).${prices[0].name}: $${prices[0].price}, (2).${prices[1].name}: $${prices[1].price}, (3).${prices[2].name}: $${prices[2].price}, (4).${prices[3].name}: $${prices[3].price}, (5).${prices[4].name}: $${prices[4].price}`));
 
 //Waiting time
 function total(){
