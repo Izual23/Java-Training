@@ -1,12 +1,3 @@
-alert("Bienvenido/a a mi página web de dibujos, a continuación podrás seleccionar tu paquete y verificar sus precios");
-alert("Haz tu pedido escribiendo el número correspondiente a cada paquete.");
-//Helpers
-let error = "Error al no seleccionar envio correctamente, por favor, realice el pedido nuevamente";
-let question = "¿Deseas envio físico? El envío físico tiene un costo de 1000 pesos argentinos.";
-//Calculations
-const plus = (a, b) =>  a + b;
-const minus = (a, b) =>  a - b;
-const iva = x => x * 0.40;
 //Details
 const prices = [
     {id: 1, name: "Cuerpo Entero", price: 3500, show: true},
@@ -17,6 +8,18 @@ const prices = [
     {id: 6, name: "Discount", price: 200, show: false},
     {id: 7, name: "Sends", price: 1000, show: false},
 ];
+const look = prices.map((the) => the.name)
+//Site intro
+alert("Bienvenido/a a mi página web de dibujos, a continuación podrás seleccionar tu paquete y verificar sus precios");
+alert("Haz tu pedido escribiendo el número correspondiente a cada paquete.");
+alert(`Ofrezco tipos de dibujos como:\n${look}`)
+//Helpers
+let error = "Error al no seleccionar envio correctamente, por favor, realice el pedido nuevamente";
+let question = "¿Deseas envio físico? El envío físico tiene un costo de 1000 pesos argentinos.";
+//Calculations
+const plus = (a, b) =>  a + b;
+const minus = (a, b) =>  a - b;
+const iva = x => x * 0.40;
 let choose = "Elija una opcion: \n";
 for (let i = 0; i < prices.length; i++){
     if (prices [i].show == true){
@@ -24,7 +27,7 @@ for (let i = 0; i < prices.length; i++){
         choose += `$${prices[i].price}\n`;
     }
 }
-let choosing = parseInt(prompt (choose));
+let choosing = parseInt(prompt(choose));
 //Calculating 1
 let finalPaq1 = minus (plus (prices[0].price, iva(prices[0].price)), prices[5].price);
 let finalPaq2 = minus (plus (prices[1].price, iva(prices[1].price)), prices[5].price);
@@ -63,7 +66,7 @@ switch (choosing){
         let again2 = prompt(question).toLowerCase();
         if (again2 == "si"){
             alert(`El precio por 2: ${prices[1].name} + envio físico es de ${totalPaq2} pesos argentinos.`);
-            alert(error)
+            alert("Será derivado a PayPal para realizar el pago.")
         }
         else if (again2 == "no"){
             alert(`Precio final: $${finalPaq2}. Será derivado a PayPal para realizar el pago.`);
