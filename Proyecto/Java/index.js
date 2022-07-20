@@ -118,3 +118,21 @@ switch (choosing){
         }
     break;
 }
+
+//HTML
+
+let div1 = document.getElementById("Title");
+div1.innerHTML = `<h1> Dibujos y Arte "Yuuki Queen"</h1>`;
+div1.className = "text-center Back_Pink";
+
+let catalogue = document.getElementById("PricesList");
+for (const item of prices){
+    if (item.show == true){
+    let items = document.createElement("li");
+    items.innerHTML =   `<h3>Dibujo: ${item.name}</h3>
+                        <p>Código: ${item.id}</p>
+                        <b>Valor: $${item.price}</b>
+                        `;
+    catalogue.append(items);
+    }
+}

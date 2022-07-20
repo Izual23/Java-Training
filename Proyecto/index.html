@@ -6,12 +6,42 @@
     <meta name="description" content="Dibujos personalizados estilo ¨Anime¨ a pedido">
     <meta name="keywords" content="DIBUJO, ARTE, COMISIONES, PLASTICA">
     <title>Yuuki Queen Web</title>
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="CSS/Styles.css">
 </head>
 <body>
-    <img src="" alt="">
-    <h1> Dibujos y Arte "Yuuki Queen"</h1>
-    <h2>Realizá tu pedido de dibujos a precios accesibles!</h2>
-    <h3>Utiliza la herramienta proporcionada por JavaScript para realizar los calculos de los costos de tus pedidos.</h3>
-    <script src="./index.js"></script>
+    <div class="container-fluid">
+        <img src="/Imágenes/Banner.jpg" alt="">
+        <div id="Welcome" class="row mid">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div id="Title"></div>
+                <div>
+                    <p class="text-center">Bienvenido/a a mi página de dibujos y arte a lapiz y digital.</p>
+                </div>
+            </div>
+        </div>
+        <div id="intro" class="row mid">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div>
+                    <h2 class="text-center">Realizá tu pedido de dibujos a precios accesibles!</h2>
+                </div>
+                <div>
+                    <p class="text-center">Utiliza la herramienta proporcionada por JavaScript para realizar los calculos de los costos de tus pedidos.</p>
+                </div>
+            </div>
+        </div>
+        <div id="List" class="row mid">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div>
+                    <h2 class="text-center">Lista de precios</h2>
+                </div>
+                <div>
+                    <ul id="PricesList"></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="Java/index.js"></script>
+    <script src="Java/bootstrap.bundle.min.js"></script>
 </body>
 </html>
