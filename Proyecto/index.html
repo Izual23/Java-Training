@@ -10,14 +10,68 @@
     <link rel="stylesheet" href="CSS/Styles.css">
 </head>
 <body>
+    <div>
+        
+    </div>
     <div class="container-fluid">
-        <img src="/Imágenes/Banner.jpg" alt="">
+        <nav class="navbar fixed-top navbar-expand-lg bg-info">
+            <div class="container-fluid">
+                <a class="navbar-brand text-dark FontItems" href="index.html">Inicio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active text-dark FontItems" aria-current="page" href="#">Sobre mi</a>
+                        <a class="nav-link text-dark FontItems" href="#">Dibujos</a>
+                        <a class="nav-link text-dark FontItems" href="#">Mangas</a>
+                        <a id="Selling" class="nav-link text-dark FontItems" href="#PricesList">Haz tu pedido</a>
+                        <a class="nav-link text-dark FontItems" href="form.html">Contactame</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <img src="Imágenes/Banner.jpg" class="Banner img-fluid" alt="">
         <div id="Welcome" class="row mid">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                 <div id="Title"></div>
                 <div>
-                    <p class="text-center">Bienvenido/a a mi página de dibujos y arte a lapiz y digital.</p>
+                    <p class="text-center FontName">Bienvenido/a a mi página de dibujos y arte a lapiz y digital.</p>
                 </div>
+            </div>
+        </div>
+        <div class="row mid">
+            <div class="col-lg-3 col-md Carousel-JS">
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 Carousel-JS">
+                <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="Imágenes/Carousel 1.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Imágenes/Carousel 2.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="Imágenes/Carousel 3.jpg" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md Carousel-JS">
             </div>
         </div>
         <div id="intro" class="row mid">
@@ -40,8 +94,83 @@
                 </div>
             </div>
         </div>
+        <div id="Wall3" class="row mid">
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                <div class="card text-bg-dark Card">
+                    <img src="Imágenes/Card1.jpg" class="card-img" alt="...">
+                    <div class="card-img-overlay">
+                        <div class="Card-Text">
+                            <h5 class="card-title text-center FontItems">Cuerpo Entero</h5>
+                            <p class="card-text text-center FontName">Cuerpo completo de tu personaje desde pies a cabeza.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                <div class="card text-bg-dark Card">
+                    <img src="Imágenes/Card2.jpg" class="card-img" alt="...">
+                    <div class="card-img-overlay">
+                        <div class="Card-Text">
+                            <h5 class="card-title text-center FontItems">Medio Cuerpo</h5>
+                            <p class="card-text text-center FontName">Plano medio de tu personaje desde la cintura hasta la cabeza.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                <div class="card text-bg-dark Card">
+                    <img src="Imágenes/Card3.jpg" class="card-img" alt="...">
+                    <div class="card-img-overlay">
+                        <div class="Card-Text">
+                            <h5 class="card-title text-center FontItems">Cabeza</h5>
+                            <p class="card-text text-center FontName">Plano desde el menton hasta el cabello de tu personaje.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                <div class="card text-bg-dark Card">
+                    <img src="Imágenes/Card4.jpg" class="card-img" alt="...">
+                    <div class="card-img-overlay">
+                        <div class="Card-Text">
+                            <h5 class="card-title text-center FontItems">Fondo</h5>
+                            <p class="card-text text-center FontName">Dibujo con fondo ambiental, sin personajes incluidos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                <div class="card text-bg-dark Card">
+                    <img src="Imágenes/Card5.jpg" class="card-img" alt="...">
+                    <div class="card-img-overlay">
+                        <div class="Card-Text">
+                            <h5 class="card-title text-center FontItems">Chibi</h5>
+                            <p class="card-text text-center FontName">Personaje compelto al estilo "Chibi" japones (Cuerpo pequeño de gran cabeza).</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="row bot bg-dark">
+            <div class= "col-lg-8 col-md-10 col-sm-12 col-xs-12">
+            </div>
+            <div class="col-lg-4 col-md-2 Icons">
+                <div>
+                    <a href="https://www.facebook.com/queenyuukifuentes"><img src="../Proyecto/Imágenes/FB_Logo.png" alt="FB"></a>
+                    <p class="text-light">Facebook</p>
+                </div>
+                <div>
+                    <a href="https://www.instagram.com/yuuki.queen2022/"><img src="../Proyecto/Imágenes/IG_Logo.png" alt="IG"></a>
+                    <p class="text-light">Instagram</p>
+                </div>
+                <div>
+                    <a href=""><img src="../Proyecto/Imágenes/YT_Logo.png" alt="YT"></a>
+                    <p class="text-light">Youtube</p>
+                </div>
+            </div>
+        </footer>
     </div>
-    <script src="Java/index.js"></script>
-    <script src="Java/bootstrap.bundle.min.js"></script>
+    <script src="Js/index.js"></script>
+    <script src="Js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

@@ -1,6 +1,6 @@
 //Details
 const prices = [
-    {id: 1, name: "Cuerpo Entero", price: 3500, show: true},
+    {id: 1, name: "Cuerpo Entero", price: 3500, show: true,},
     {id: 2, name: "Medio Cuerpo", price: 2000, show: true},
     {id: 3, name: "Cabeza", price: 1500, show: true},
     {id: 4, name: "Fondo", price: 3000, show: true},
@@ -10,8 +10,9 @@ const prices = [
 ];
 const look = prices.map((the) => the.name)
 //Site intro
-alert("Bienvenido/a a mi página web de dibujos, a continuación podrás seleccionar tu paquete y verificar sus precios");
-alert("Haz tu pedido escribiendo el número correspondiente a cada paquete.");
+
+alert("Bienvenido/a a mi página web de dibujos, a continuación podrás seleccionar tu paquete y verificar sus precios");//
+/*alert("Haz tu pedido escribiendo el número correspondiente a cada paquete.");
 alert(`Ofrezco tipos de dibujos como:\n${look}`)
 //Helpers
 let error = "Error al no seleccionar envio correctamente, por favor, realice el pedido nuevamente";
@@ -117,13 +118,12 @@ switch (choosing){
             alert(error);
         }
     break;
-}
+}*/
 
 //HTML
-
 let div1 = document.getElementById("Title");
-div1.innerHTML = `<h1> Dibujos y Arte "Yuuki Queen"</h1>`;
-div1.className = "text-center Back_Pink";
+div1.innerHTML = `<h1> Dibujos y Arte .Yuuki Queen.</h1>`;
+div1.className = "text-center Back_Pink FontText";
 
 let catalogue = document.getElementById("PricesList");
 for (const item of prices){
@@ -136,3 +136,17 @@ for (const item of prices){
     catalogue.append(items);
     }
 }
+
+let wall2 = document.getElementById("List");
+wall2.onmousemove = () => alert("Página en desarollo, servicios proximamente!");
+
+let wall3 = document.getElementById("Wall3");
+wall3.onclick = () => alert("Proximamente");
+
+let form = document.getElementById("Forming");
+form.addEventListener("click", event => {
+    if (event.target.matches("#submit-button")) {
+        event.preventDefault();
+        alert("Contacto proximamente");
+    }
+});

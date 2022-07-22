@@ -1,7 +1,71 @@
+@font-face {
+    font-family: Font1;
+    src: url("../Fonts/Sushi\ Omelette\ DEMO.ttf"); 
+}
+
+@font-face {
+    font-family: Font2;
+    src: url("../Fonts/Anyk.ttf"); 
+}
+
+@font-face {
+        font-family: Font3;
+        src: url("../Fonts/beachday.ttf"); 
+}
+
+@font-face {
+    font-family: Font4;
+    src: url("../Fonts/Vanilla\ Twilight.otf");
+}
+
 .Back_Pink {
-    background-color: rgb(236, 103, 196)
+    background-color: rgb(236, 103, 196);
 }
 
 #Back_Light_Pink {
-    background-color: rgb(255, 195, 237)
+    background-color: rgb(255, 195, 237);
+}
+
+.Banner {
+    width: auto;
+    height: auto;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.FontText {
+    font-family: Font1;
+}
+
+.FontName {
+    font-family: Font4;
+}
+
+.FontItems {
+    font-family: Font3;
+}
+
+.Carousel-JS {
+    background-color: rgba(0, 156, 228, 0.1); 
+}
+
+.Icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px; 
+}
+
+.Card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.Form {
+    margin: 50px;
 }
