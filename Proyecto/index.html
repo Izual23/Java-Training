@@ -10,9 +10,6 @@
     <link rel="stylesheet" href="CSS/Styles.css">
 </head>
 <body>
-    <div>
-        
-    </div>
     <div class="container-fluid">
         <nav class="navbar fixed-top navbar-expand-lg bg-info">
             <div class="container-fluid">
@@ -25,21 +22,23 @@
                         <a class="nav-link active text-dark FontItems" aria-current="page" href="#">Sobre mi</a>
                         <a class="nav-link text-dark FontItems" href="#">Dibujos</a>
                         <a class="nav-link text-dark FontItems" href="#">Mangas</a>
-                        <a id="Selling" class="nav-link text-dark FontItems" href="#PricesList">Haz tu pedido</a>
+                        <a id="Selling" class="nav-link text-dark FontItems" href="#List">Haz tu pedido</a>
                         <a class="nav-link text-dark FontItems" href="form.html">Contactame</a>
                     </div>
                 </div>
             </div>
         </nav>
-        <img src="Imágenes/Banner.jpg" class="Banner img-fluid" alt="">
-        <div id="Welcome" class="row mid">
-            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <div id="Title"></div>
-                <div>
-                    <p class="text-center FontName">Bienvenido/a a mi página de dibujos y arte a lapiz y digital.</p>
+        <header>
+            <img src="Imágenes/Banner.jpg" class="Banner img-fluid" alt="">
+            <div id="Welcome" class="row mid">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <div id="Title"></div>
+                    <div>
+                        <p class="text-center FontName">Bienvenido/a a mi pagina de dibujos y arte a lapiz y digital.</p>
+                    </div>
                 </div>
             </div>
-        </div>
+        </header>
         <div class="row mid">
             <div class="col-lg-3 col-md Carousel-JS">
             </div>
@@ -89,69 +88,89 @@
                 <div>
                     <h2 class="text-center">Lista de precios</h2>
                 </div>
-                <div>
-                    <ul id="PricesList"></ul>
+            </div>
+        </div>
+        <div id="Wall3" >
+            <div class="row mid justify-content-center DivCard">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 Detail">
+                    <div class="Card text-bg-dark card">
+                        <img src="Imágenes/Card1.jpg" class="card-img" alt="...">
+                        <div class="card-img-overlay">
+                            <h5 class="card-title text-center FontCards">Cuerpo Entero</h5>
+                            <p class="card-text text-center aling-items-center FontName">Cuerpo completo de tu personaje desde pies a cabeza.</p>
+                        </div>
+                    </div>
+                    <div class="PricesList text-center"></div>
+                </div>
+                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 Detail">
+                    <div class="card text-bg-dark Card">
+                        <img src="Imágenes/Card2.jpg" class="card-img" alt="...">
+                        <div class="card-img-overlay">
+                            <div class="Card-Text text-center aling-items-center">
+                                <h5 class="card-title text-center FontCards">Medio Cuerpo</h5>
+                                <p class="card-text text-center FontName">Plano medio de tu personaje desde la cintura hasta la cabeza.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="PricesList text-center"></div>
+                </div>
+                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 Detail">
+                    <div class="card text-bg-dark Card">
+                        <img src="Imágenes/Card3.jpg" class="card-img" alt="...">
+                        <div class="card-img-overlay">
+                            <div class="Card-Text">
+                                <h5 class="card-title text-center FontCards">Cabeza</h5>
+                                <p class="card-text text-center aling-items-center FontName">Plano desde el menton hasta el cabello de tu personaje.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="PricesList text-center"></div>
+                </div>
+            </div>
+            <div class="row mid justify-content-center DivCard">
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 Detail">
+                    <div class="card text-bg-dark Card">
+                        <img src="Imágenes/Card4.jpg" class="card-img" alt="...">
+                        <div class="card-img-overlay">
+                            <div class="Card-Text">
+                                <h5 class="card-title text-center FontCards">Fondo</h5>
+                                <p class="card-text text-center FontName">Dibujo con fondo ambiental, sin personajes incluidos.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="PricesList text-center"></div>
+                </div>
+                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 Detail">
+                    <div class="card text-bg-dark Card">
+                        <img src="Imágenes/Card5.jpg" class="card-img" alt="...">
+                        <div class="card-img-overlay">
+                            <div class="Card-Text">
+                                <h5 class="card-title text-center FontCards">Chibi</h5>
+                                <p class="card-text text-center FontName">Personaje compelto al estilo "Chibi" japones (Cuerpo pequeño de gran cabeza).</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="PricesList text-center"></div>
+                </div>
+                <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 Detail">
+                    <div class="card text-bg-dark Card">
+                        <img src="Imágenes/Card6.jpg" class="card-img" alt="...">
+                        <div class="card-img-overlay">
+                            <div class="Card-Text">
+                                <h5 class="card-title text-center FontCards">Personalizado</h5>
+                                <p class="card-text text-center FontName">Cuentame que tipo de dibujo con que caracteristicas deseas.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="PricesList text-center"></div>
                 </div>
             </div>
         </div>
-        <div id="Wall3" class="row mid">
-            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-                <div class="card text-bg-dark Card">
-                    <img src="Imágenes/Card1.jpg" class="card-img" alt="...">
-                    <div class="card-img-overlay">
-                        <div class="Card-Text">
-                            <h5 class="card-title text-center FontItems">Cuerpo Entero</h5>
-                            <p class="card-text text-center FontName">Cuerpo completo de tu personaje desde pies a cabeza.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-                <div class="card text-bg-dark Card">
-                    <img src="Imágenes/Card2.jpg" class="card-img" alt="...">
-                    <div class="card-img-overlay">
-                        <div class="Card-Text">
-                            <h5 class="card-title text-center FontItems">Medio Cuerpo</h5>
-                            <p class="card-text text-center FontName">Plano medio de tu personaje desde la cintura hasta la cabeza.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-                <div class="card text-bg-dark Card">
-                    <img src="Imágenes/Card3.jpg" class="card-img" alt="...">
-                    <div class="card-img-overlay">
-                        <div class="Card-Text">
-                            <h5 class="card-title text-center FontItems">Cabeza</h5>
-                            <p class="card-text text-center FontName">Plano desde el menton hasta el cabello de tu personaje.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-                <div class="card text-bg-dark Card">
-                    <img src="Imágenes/Card4.jpg" class="card-img" alt="...">
-                    <div class="card-img-overlay">
-                        <div class="Card-Text">
-                            <h5 class="card-title text-center FontItems">Fondo</h5>
-                            <p class="card-text text-center FontName">Dibujo con fondo ambiental, sin personajes incluidos.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-                <div class="card text-bg-dark Card">
-                    <img src="Imágenes/Card5.jpg" class="card-img" alt="...">
-                    <div class="card-img-overlay">
-                        <div class="Card-Text">
-                            <h5 class="card-title text-center FontItems">Chibi</h5>
-                            <p class="card-text text-center FontName">Personaje compelto al estilo "Chibi" japones (Cuerpo pequeño de gran cabeza).</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <footer class="row bot bg-dark">
+        <footer class="row bot bg-dark foot">
             <div class= "col-lg-8 col-md-10 col-sm-12 col-xs-12">
             </div>
             <div class="col-lg-4 col-md-2 Icons">

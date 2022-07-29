@@ -18,6 +18,13 @@
     src: url("../Fonts/Vanilla\ Twilight.otf");
 }
 
+body {
+    background-image: url(../Imágenes/BG.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    position: relative; }
+
 .Back_Pink {
     background-color: rgb(236, 103, 196);
 }
@@ -35,14 +42,24 @@
 
 .FontText {
     font-family: Font1;
+    font-size: medium;
 }
 
 .FontName {
     font-family: Font4;
+    font-size: x-large;
+    -webkit-text-stroke: 0.9px rgb(0, 247, 255);
 }
 
 .FontItems {
     font-family: Font3;
+    font-size: medium;
+}
+
+.FontCards {
+    font-family: Font3;
+    font-size: xx-large;
+    -webkit-text-stroke: 2px rgb(55, 255, 222);
 }
 
 .Carousel-JS {
@@ -59,13 +76,36 @@
     margin-bottom: 40px; 
 }
 
-.Card {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+.DivCard{
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
-.Form {
-    margin: 50px;
+.Card {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    border: solid 4px black;
+    border-radius: 15px;
+    overflow: hidden;
+    text-align: center;
+    justify-content: center;
+    transition: transform 0.5s;
+}
+
+.Card:hover {
+    transform: scale(1.2, 1.2); 
+}
+
+#Forming {
+    background-color: rgba(0, 247, 255, 0.2);
+    border: solid 4px black;
+    border-radius: 15px;
+    border-color: rgb(255, 65, 182);
+    padding-top: 1%;
+    padding-bottom: 1%;
+}
+.foot{
+    margin-top: 1%;
 }
