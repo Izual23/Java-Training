@@ -10,6 +10,7 @@ else{
     user = prompt("Ingrese su nombre");
     sessionStorage.setItem("user",user);
 }
+
 setTimeout(() =>{
     sessionStorage.clear();
 }, 60000)
@@ -38,8 +39,17 @@ alert("Bienvenido/a a mi página web de dibujos, a continuación podrás selecci
 alert("Haz tu pedido escribiendo el número correspondiente a cada paquete.");
 alert(`Ofrezco tipos de dibujos como:\n${look}`)
 //Helpers
-let error = "Error al no seleccionar envio correctamente, por favor, realice el pedido nuevamente";
-let question = "¿Deseas envio físico? El envío físico tiene un costo de 1000 pesos argentinos.";
+let advice = {
+    question: "¿Deseas envio físico? El envío físico tiene un costo de 1000 pesos argentinos.",
+    error: "Error al no seleccionar envio correctamente, por favor, realice el pedido nuevamente",
+    finish: "Será derivado a PayPal para realizar el pago.",
+}
+let {
+    question,
+    error,
+    finish
+} = advice;
+
 //Calculations
 const plus = (a, b) =>  a + b;
 const minus = (a, b) =>  a - b;
@@ -78,7 +88,7 @@ switch (choosing){
         let again1 = prompt(question).toLowerCase();
         if (again1 == "si"){
             alert(`El precio por 1: ${prices[0].name} + envio físico es de ${totalPaq1} pesos argentinos.`);
-            alert("Será derivado a PayPal para realizar el pago.");
+            alert(finish);
         }
         else if (again1 == "no"){
             alert(`Precio final: $${finalPaq1}. Será derivado a PayPal para realizar el pago.`);
@@ -92,7 +102,7 @@ switch (choosing){
         let again2 = prompt(question).toLowerCase();
         if (again2 == "si"){
             alert(`El precio por 2: ${prices[1].name} + envio físico es de ${totalPaq2} pesos argentinos.`);
-            alert("Será derivado a PayPal para realizar el pago.")
+            alert(finish)
         }
         else if (again2 == "no"){
             alert(`Precio final: $${finalPaq2}. Será derivado a PayPal para realizar el pago.`);
@@ -106,7 +116,7 @@ switch (choosing){
         let again3 = prompt(question).toLowerCase();
         if (again3 == "si"){
             alert(`El precio por 3: ${prices[2].name} + envio físico es de ${totalPaq3} pesos argentinos.`);
-            alert("Será derivado a PayPal para realizar el pago.")
+            alert(finish)
         }
         else if (again3 == "no"){
             alert(`Precio final: $${finalPaq3}. Será derivado a PayPal para realizar el pago.`);
@@ -120,7 +130,7 @@ switch (choosing){
         let again4 = prompt(question).toLowerCase();
         if (again4 == "si"){
             alert(`El precio por 4: ${prices[3].name} + envio físico es de ${totalPaq4} pesos argentinos.`);
-            alert("Será derivado a PayPal para realizar el pago.")
+            alert(finish)
         }
         else if (again4 == "no"){
             alert(`Precio final: $${finalPaq4}. Será derivado a PayPal para realizar el pago.`);
@@ -134,7 +144,7 @@ switch (choosing){
         let again5 = prompt(question).toLowerCase();
         if (again5 == "si"){
             alert(`El precio por 5: ${prices[4].name} + envio físico es de ${totalPaq5} pesos argentinos.`);
-            alert("Será derivado a PayPal para realizar el pago.")
+            alert(finishh)
         }
         else if (again5 == "no"){
             alert(`Precio final: $${finalPaq5}. Será derivado a PayPal para realizar el pago.`);
@@ -148,7 +158,7 @@ switch (choosing){
         let again6 = prompt(question).toLowerCase();
         if (again6 == "si"){
             alert(`El precio por 6: ${prices[5].name} + envio físico es de ${totalPaq6} pesos argentinos.`);
-            alert("Será derivado a PayPal para realizar el pago.")
+            alert(finish)
         }
         else if (again6 == "no"){
             alert(`Precio final: $${finalPaq6}. Será derivado a PayPal para realizar el pago.`);
@@ -170,6 +180,9 @@ wall2.onmousemove = () => alert("Página en desarollo, servicios proximamente!")
 let wall3 = document.getElementById("Wall3");
 wall3.onclick = () => alert("Proximamente");
 
+let spread = document.getElementById("list_Button");
+spread.onclick = () => console.log(...prices)
+
 var cards = document.querySelectorAll('.Detail');
 for (var i = 0; i < cards.length; i++) {
     cards[i].querySelector('.PricesList').innerHTML =  `<h3>Dibujo: ${prices[i].name}</h3>
@@ -177,15 +190,3 @@ for (var i = 0; i < cards.length; i++) {
                                                         <b>Valor: $${prices[i].price}</b>
                                                         `;
 }
-
-/*let catalogue = document.querySelector('.Priceslist');
-for (const item of prices){
-    if (item.show == true){
-    let items = document.createElement("li");
-    items.innerHTML =   `<h3>Dibujo: ${item.name}</h3>
-                        <p>Código: ${item.id}</p>
-                        <b>Valor: $${item.price}</b>
-                        `;
-    catalogue.append(items);
-    }
-}*/
