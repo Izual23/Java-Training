@@ -2,11 +2,10 @@ let form = document.getElementById("Forming");
 form.addEventListener("click", event => {
     if (event.target.matches("#submit-button")) {
         event.preventDefault();
-        alert("Contacto proximamente");
     }
 });
 
-/*let but = document.getElementById("submit-button");
+let but = document.getElementById("submit-button");
 but.addEventListener("click", event => {
     Swal.fire({
         title: 'Contacto proximamente',
@@ -17,4 +16,4 @@ but.addEventListener("click", event => {
             popup: 'animate__animated animate__fadeOutUp'
         }
     })
-})*/
+})
