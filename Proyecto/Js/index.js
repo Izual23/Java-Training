@@ -175,10 +175,37 @@ div1.innerHTML = `<h1> Dibujos y Arte .Yuuki Queen.</h1>`;
 div1.className = "text-center Back_Pink FontText";
 
 let wall2 = document.getElementById("List");
-wall2.onmousemove = () => alert("Página en desarollo, servicios proximamente!");
+wall2.addEventListener("click", () => {
+    Swal.fire({
+        icon: 'error',
+        title: 'Página en desarollo',
+        text: 'Servicios proximamente!',
+    })
+})
+
 
 let wall3 = document.getElementById("Wall3");
-wall3.onclick = () => alert("Proximamente");
+wall3.addEventListener("click", () => {
+    Swal.fire({
+        title: 'Pedidos proximamente',
+        showClass: {
+            popup: 'animate__animated animate__fadeInDown'
+        },
+        hideClass: {
+            popup: 'animate__animated animate__fadeOutUp'
+        }
+    })
+})
+
+let YT = document.getElementById("YT");
+YT.addEventListener("click", () => {
+    event.preventDefault();
+    Toastify({
+        text: "Canal de YouTube en creacion 🦄",
+        duration: 5000,
+        className: 'toastyColorRed'
+        }).showToast();
+})
 
 let spread = document.getElementById("list_Button");
 spread.onclick = () => console.log(...prices)
