@@ -210,6 +210,7 @@ YT.addEventListener("click", () => {
 let spread = document.getElementById("list_Button");
 spread.onclick = () => console.log(...prices)
 
+
 var cards = document.querySelectorAll('.Detail');
 for (var i = 0; i < cards.length; i++) {
     cards[i].querySelector('.PricesList').innerHTML =  `<h3>Dibujo: ${prices[i].name}</h3>
