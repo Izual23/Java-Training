@@ -12,36 +12,44 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
 </head>
 <body>
-    <div class="container-fluid">
+    <div class="container-fluid ">
         <nav class="navbar fixed-top navbar-expand-lg bg-info">
             <div class="container-fluid">
-                <a class="navbar-brand text-dark FontItems" href="index.html">Inicio</a>
+                <a class="navbar-brand text-dark FontItems" href="#">Inicio</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                        <a class="nav-link active text-dark FontItems" aria-current="page" href="#">Sobre mi</a>
-                        <a class="nav-link text-dark FontItems" href="#">Dibujos</a>
-                        <a class="nav-link text-dark FontItems" href="#">Mangas</a>
-                        <a id="Selling" class="nav-link text-dark FontItems" href="#List">Haz tu pedido</a>
-                        <a id="Selling" class="nav-link text-dark FontItems" href="list.html">Precios(Lista)</a>
-                        <a class="nav-link text-dark FontItems" href="form.html">Contactame</a>
+                    <a class="nav-link active text-dark FontItems" aria-current="page" href="#about">Sobre mi</a>
+                    <a class="nav-link text-dark FontItems" href="#carouselExampleIndicators">Dibujos</a>
+                    <a id="Soon" class="nav-link text-dark FontItems" href="#">Mangas</a>
+                    <a class="nav-link text-dark FontItems" href="#List">Haz tu pedido</a>
+                    <a class="nav-link text-dark FontItems" href="list.html">Precios (Lista)</a>
+                    <a class="nav-link text-dark FontItems" href="form.html">Contactame</a>
+                    <div class="navbar-nav ms-auto">
+                        <a id="inUser" class="nav-link text-dark FontItems" href="">Ingresa con tu usuario</a>
                     </div>
                 </div>
             </div>
         </nav>
         <header>
-            <img src="Imágenes/Banner.jpg" class="Banner img-fluid" alt="">
+            <img id="presentation" src="Imágenes/Banner.jpg" class="Banner img-fluid" alt="">
             <div id="Welcome" class="row mid">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <div id="Title"></div>
                     <div>
-                        <p class="text-center FontName">Bienvenido/a a mi pagina de dibujos y arte a lapiz y digital.</p>
+                        <p class="text-center FontName Margin_2">Bienvenido/a a mi pagina de dibujos y arte a lapiz y digital.</p>
                     </div>
+                    <div id="about"></div>
+                    <div id="story"></div>
                 </div>
             </div>
         </header>
+        <div class="row mid">
+            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                <div id="show"></div>
+            </div>
+        </div>
         <div class="row mid">
             <div class="col-lg-3 col-md Carousel-JS">
             </div>
@@ -93,10 +101,10 @@
                 </div>
             </div>
         </div>
-        <div id="Wall3" >
+        <div>
             <div class="row mid justify-content-center DivCard">
                 <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 Detail">
-                    <div class="Card text-bg-dark card">
+                    <div id="c1" class="Card text-bg-dark card">
                         <img src="Imágenes/Card1.jpg" class="card-img" alt="...">
                         <div class="card-img-overlay">
                             <h5 class="card-title text-center FontCards">Cuerpo Entero</h5>
@@ -107,7 +115,7 @@
                 </div>
                 <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
                 <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 Detail">
-                    <div class="card text-bg-dark Card">
+                    <div id="c2" class="card text-bg-dark Card">
                         <img src="Imágenes/Card2.jpg" class="card-img" alt="...">
                         <div class="card-img-overlay">
                             <div class="Card-Text text-center aling-items-center">
@@ -120,7 +128,7 @@
                 </div>
                 <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
                 <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 Detail">
-                    <div class="card text-bg-dark Card">
+                    <div id="c3" class="card text-bg-dark Card">
                         <img src="Imágenes/Card3.jpg" class="card-img" alt="...">
                         <div class="card-img-overlay">
                             <div class="Card-Text">
@@ -134,7 +142,7 @@
             </div>
             <div class="row mid justify-content-center DivCard">
                 <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 Detail">
-                    <div class="card text-bg-dark Card">
+                    <div id="c4" class="card text-bg-dark Card">
                         <img src="Imágenes/Card4.jpg" class="card-img" alt="...">
                         <div class="card-img-overlay">
                             <div class="Card-Text">
@@ -147,7 +155,7 @@
                 </div>
                 <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
                 <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 Detail">
-                    <div class="card text-bg-dark Card">
+                    <div id="c5" class="card text-bg-dark Card">
                         <img src="Imágenes/Card5.jpg" class="card-img" alt="...">
                         <div class="card-img-overlay">
                             <div class="Card-Text">
@@ -160,7 +168,7 @@
                 </div>
                 <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1"></div>
                 <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2 Detail">
-                    <div class="card text-bg-dark Card">
+                    <div id="c6" class="card text-bg-dark Card">
                         <img src="Imágenes/Card6.jpg" class="card-img" alt="...">
                         <div class="card-img-overlay">
                             <div class="Card-Text">
@@ -175,7 +183,10 @@
         </div>
         <div class="row mid justify-content-center Icons">
             <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
-                <button id="list_Button" type="button" class="btn btn-secondary">Modo "Lista" por Consola (BETA)</button>
+                <a class="btn btn-secondary" type="button" href="list.html">Observar "Lista de precios clásica"</a>
+            </div>
+            <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2">
+                <button id="list_Button" type="button" class="btn btn-secondary">Observar "Lista" por consola (BETA)</button>
             </div>
         </div>
         <footer class="row bot bg-dark foot">
