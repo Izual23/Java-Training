@@ -37,7 +37,7 @@ div2.className = "text-center FontText1 Margin_1";
 
 let div3 = document.getElementById("story");
 div3.innerHTML = `<p>¡HOLA! Soy Yuuki, me dedico a la ilustración, dibujo en su mayoría de estilo manga/anime. Soy diseniadora grafica y me dedico enteramente a esto, adoro poder dibujar y crear cosas que creía que solo eran ideas en mi cabeza y poder plasmarlas. Muchas gracias a todas las personas que puedan apoyarme en esta web para que pueda seguir con mi deseo y ayudarme a cumplir con mis objetivos.</p>`;
-div3.className = "text-center FontText2 FontName Margin_2 Back_sky";
+div3.className = "text-center FontName Margin_2 Back_sky";
 
 let div4 = document.getElementById("show");
 div4.innerHTML = `<h1> Dibujos.</h1>`;
